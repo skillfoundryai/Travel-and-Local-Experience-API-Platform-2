@@ -25,4 +25,3 @@ dump.rdb
 .node_repl_history
 generated-clients/
 generated-server/
-.env.example
