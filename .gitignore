@@ -22,7 +22,7 @@ dump.rdb
 .scannerwork/
 .semgrep-cache/
 .vault-token
-node_repl_history
+.node_repl_history
 generated-clients/
 generated-server/
 .env.example
