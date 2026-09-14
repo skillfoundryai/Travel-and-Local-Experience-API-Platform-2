@@ -2,7 +2,7 @@
   "name": "express-typescript-api",
   "version": "1.0.0",
   "private": true,
-  "description": "Express API built with TypeScript",
+  "description": "Express API built with TypeScript and Nodejs",
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
