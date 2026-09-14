@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-The service listens on port `3000` by default. Set the `PORT` environment variable to use another port.
+The service listens on port `3000` by default. Set the `PORT` environment variable to use another port e.g 5000.
 
 For a production-style run, compile the TypeScript source and start the generated JavaScript:
 
