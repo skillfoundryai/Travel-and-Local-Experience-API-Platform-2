@@ -4,6 +4,7 @@
 !.env.sample
 !.env.template
 *.log
+logs/
 .DS_Store
 Thumbs.db
 .vscode/
