@@ -16,5 +16,5 @@ throw new Error(`NODE_ENV is required (e.g. development|test|production)`);
  
 }
 app.listen(port, () => {
-  console.log(`Wayfarinook API listening on port ${port}`);
+  //console.log(`Wayfarinook API listening on port ${port}`);
 });
