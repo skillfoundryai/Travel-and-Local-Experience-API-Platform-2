@@ -4,8 +4,8 @@
 !.env.sample
 !.env.template
 *.log
-.DS_Store
 Thumbs.db
+.DS_Store
 .vscode/
 .idea/
 node_modules/
@@ -15,13 +15,13 @@ coverage/
 .turbo/
 .cache/
 .eslintcache
-*.sqlite-journal
 *.db-journal
 *.rdb
 dump.rdb
 .scannerwork/
 .semgrep-cache/
 .vault-token
+*.sqlite-journal
 .node_repl_history
 generated-clients/
 generated-server/
