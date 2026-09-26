@@ -1,25 +1,26 @@
 {
-  "name": "express-typescript-api",
+  "name": "environment-config-service",
   "version": "1.0.0",
-  "private": true,
-  "description": "Express API built with TypeScript and Nodejs",
-    "dependencies": {
-    "express": "^5.1.0"
-  },
+  "description": "Node.js TypeScript service with validated environment configuration",
   "main": "dist/index.js",
-  
-  "devDependencies": {
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.3.0",
-    "tsx": "^4.20.5",
-    "typescript": "^5.9.2"
-  },
-  "engines": {
-    "node": ">=20"
-  },
+  "type": "commonjs",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
