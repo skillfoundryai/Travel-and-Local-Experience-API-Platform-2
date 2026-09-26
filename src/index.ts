@@ -1,20 +1,22 @@
-import { env } from "./config/env";
 import { app } from "./app";
+import { loadConfig } from "./config/env";
 
-async function startServer() {
+function startServer() {
   try {
-    app.listen(env.port, () => {
+    const config = loadConfig();
+
+    app.listen(config.port, () => {
       console.log(
-        `Server started on port ${env.port} in ${env.nodeEnv} mode`
+        `Server listening on port ${config.port} (${config.nodeEnv})`
       );
     });
   } catch (error) {
     const message =
       error instanceof Error
         ? error.message
-        : "Unknown startup error";
+        : "Unknown configuration error.";
 
-    console.error(`Startup failed: ${message}`);
+    console.error(`Startup configuration error: ${message}`);
     process.exit(1);
   }
 }
