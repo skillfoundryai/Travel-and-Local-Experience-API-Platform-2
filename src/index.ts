@@ -1,9 +1,9 @@
 import { app } from "./app";
-import { loadConfig } from "./config/env";
+import { env } from "./config/env";
 
 function startServer() {
   try {
-    const config = loadConfig();
+    const config = env;
 
     app.listen(config.port, () => {
       console.log(
