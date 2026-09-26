@@ -19,3 +19,4 @@ For a production-style run, compile the TypeScript source and start the generate
 npm run build
 npm start
 ```
+Best luck
