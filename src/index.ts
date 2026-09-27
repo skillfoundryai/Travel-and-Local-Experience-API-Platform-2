@@ -1,23 +1,24 @@
-import express from "express";
+import { app } from "./app";
+import { env } from "./config/env";
 
-const app = express();
-const port = Number.parseInt(process.env.PORT ?? "3000", 10);
-const nodeenv =  process.env.NODE_ENV; 
+function startServer() {
+  try {
+    const config = env;
 
-const isPortCorect = !isNaN(port) && port> 999 && port <9999
-const isCorrectNodeenv =  ["development", "test", "staging", "production"].indexOf(nodeenv)>-1
+    app.listen(config.port, () => {
+      console.log(
+        `Server listening on port ${config.port} (${config.nodeEnv})`
+      );
+    });
+  } catch (error) {
+    const message =
+      error instanceof Error
+        ? error.message
+        : "Unknown configuration error.";
 
-if( !isCorrectNodeenv){
-throw new Error(`NODE_ENV is required (e.g. development|test|production)`);
- 
+    console.error(`Startup configuration error: ${message}`);
+    process.exit(1);
+  }
 }
 
-if(!isPortCorect){
-throw new Error(`PORT must be a number between 1000 and 9999`);
- 
-}
-
-
-app.listen(port, () => {
-  //console.log(`Wayfarinook API listening on port ${port}`);
-});
+startServer();
