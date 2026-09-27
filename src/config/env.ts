@@ -51,7 +51,9 @@ function parseRuntimeMode(value: string): RuntimeMode {
   return value as RuntimeMode;
 }
 
-export const env = {
-  port: parsePort(requireEnv("PORT")),
-  nodeEnv: parseRuntimeMode(requireEnv("NODE_ENV")),
-} as const;
+export function loadEnv() {
+  return {
+    port: parsePort(requireEnv("PORT")),
+    nodeEnv: parseRuntimeMode(requireEnv("NODE_ENV")),
+  } as const;
+}
