@@ -1,10 +1,10 @@
-import { app } from "./app";
+import { app } from "./app2";
 import { loadEnv } from "./config/env";
 
 export function startServer() {
   try {
     const config = loadEnv();
-
+//start
     return app.listen(config.port, () => {
       console.log(
         `Server listening on port ${config.port} (${config.nodeEnv})`,
