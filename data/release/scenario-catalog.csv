@@ -1,0 +1,16 @@
+scenario_id,area,request_summary,expected_status,expected_code
+SCN-001,discovery,Get activity-demo-001,200,OK
+SCN-002,discovery,Get activity-demo-999,404,NOT_FOUND
+SCN-003,discovery,Missing discovery identifier,400,INVALID_REQUEST
+SCN-004,itinerary,Create itinerary for traveler-demo-a,201,ITINERARY_CREATED
+SCN-005,itinerary,Read itinerary-demo-001 as traveler-demo-a,200,OK
+SCN-006,itinerary,Read itinerary-demo-001 as traveler-demo-b,403,ACCESS_DENIED
+SCN-007,booking,Create booking for activity-demo-001,201,BOOKING_CREATED
+SCN-008,booking,Create booking for activity-demo-999,422,ACTIVITY_UNAVAILABLE
+SCN-009,booking,Read booking-demo-001 as traveler-demo-b,403,ACCESS_DENIED
+SCN-010,authentication,No authorization header on protected route,401,AUTH_REQUIRED
+SCN-011,authentication,Malformed bearer value on protected route,401,AUTH_INVALID
+SCN-012,dependency,Temporary cache unavailable with database available,200,CACHE_BYPASS
+SCN-013,dependency,Database unavailable during booking write,503,SERVICE_UNAVAILABLE
+SCN-014,privacy,Error response inspection,403,NO_PRIVATE_DATA
+SCN-015,recovery,Repeat after safe failed booking write,201,ONE_BOOKING_RECORD

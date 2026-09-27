@@ -1,0 +1,45 @@
+{
+  "places": [
+    {
+      "id": "place-demo-001",
+      "name": "Lantern Table",
+      "description": "A sample neighborhood restaurant record.",
+      "location": { "city": "Lisbon", "area": "North Square" },
+      "category": "restaurant"
+    },
+    {
+      "id": "place-demo-002",
+      "name": "Blue Tile Cafe",
+      "description": "A sample cafe record for local discovery.",
+      "location": { "city": "Lisbon", "area": "River Quarter" },
+      "category": "cafe"
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity-demo-001",
+      "name": "Old Streets Walk",
+      "description": "A sample guided walking activity.",
+      "location": { "city": "Lisbon", "area": "North Square" },
+      "category": "walking",
+      "durationMinutes": 90
+    },
+    {
+      "id": "activity-demo-002",
+      "name": "Tile Pattern Workshop",
+      "description": "A sample creative activity.",
+      "location": { "city": "Lisbon", "area": "River Quarter" },
+      "category": "workshop",
+      "durationMinutes": 120
+    },
+    {
+      "id": "activity-demo-003",
+      "name": "Garden Sketch Hour",
+      "description": "A sample low-intensity outdoor activity.",
+      "location": { "city": "Lisbon", "area": "Green District" },
+      "category": "outdoor",
+      "durationMinutes": 60
+    }
+  ],
+  "knownUnavailableId": "activity-demo-999"
+}

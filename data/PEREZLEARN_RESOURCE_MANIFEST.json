@@ -1,0 +1,57 @@
+{
+  "format": "perezlearn.mock-resource.v1",
+  "projectId": "d61dab55-87b8-4016-876c-53f884e4495c",
+  "projectVersionId": "d61dab55-87b8-4016-876c-53f884e4495c",
+  "generationNumber": 1,
+  "generatedAt": "2026-09-09T14:59:50.882Z",
+  "syntheticDataOnly": true,
+  "executableContent": false,
+  "files": [
+    {
+      "path": "fixtures/discovery-records.json",
+      "mimeType": "application/json",
+      "purpose": "Synthetic place and activity records for discovery and MongoDB integration practice.",
+      "relatedTaskIds": [
+        "project-task:a8457ea8fcb0511bdedc6d81d11ba0569c386775fa815cb461b4c0f8ec062dfb",
+        "project-task:805559cbed9ef23a4282815e14ce800cf8f9b762bc2d7496845f72c2da60ad7b",
+        "project-task:7751835a1cb1f6f33c590200c0e9f116ff3b6f6a588f2774a174e09d112a0e38"
+      ],
+      "sha256": "5e871ccc666bff41e251e22238804f880ba5a95101f180fa4a12f6f9df00b20e"
+    },
+    {
+      "path": "fixtures/traveler-journeys.json",
+      "mimeType": "application/json",
+      "purpose": "Synthetic owner-scoped itinerary and application-booking records for protected API practice.",
+      "relatedTaskIds": [
+        "project-task:8c7a2d87b8d2f0ee5989772511e70703999e7e69f8a67d189bf31b79ec976b72",
+        "project-task:c8dae6762fe44e7fffe20d4039d3f557d59b50476de3b7fe049eae7234fdfd3d",
+        "project-task:28db50cb9aa09b94ed3a6a394918de84ad5f634866acf194b95da8a4abd74fb0",
+        "project-task:bdd58b480508e9d50cb420fafcb2a1f17520cf61600d8f331c7ab5b3ab7045a5"
+      ],
+      "sha256": "9a99ca8f7ec2beb7b0d36e9f82a97be383858470e961c10e3f8cbdf63850b9d0"
+    },
+    {
+      "path": "release/scenario-catalog.csv",
+      "mimeType": "text/csv",
+      "purpose": "Compact synthetic scenario catalog covering successful and safe failure outcomes.",
+      "relatedTaskIds": [
+        "project-task:9beb81aad4eb49eb3ee0f43b88cf2f19f8f647c5e3cb0c7ef2daaec99a4d1675",
+        "project-task:91dc303236ac6a845583abd82f1ddad18dd4d9bdaa729bf949306e8fe2f44c77",
+        "project-task:360a1014c1a4c96ada67607cbfd9279ac21938cfa76e4135b448cd6f7d63cd4d"
+      ],
+      "sha256": "ed1cc7dcafd4508ef22e7c9c5571c2d450fcca45971e5cc11e18337b7e7dbf1a"
+    },
+    {
+      "path": "release/evidence-status.md",
+      "mimeType": "text/markdown",
+      "purpose": "Synthetic handover evidence summary with explicit practice statuses and scope limits.",
+      "relatedTaskIds": [
+        "project-task:3143e294b73a58fb002e6148961bbcfd5f2f8001e84075cb397cd63db06fee71",
+        "project-task:40808ceb65fcffa1c84cda79b736af2867d4f8cf4d8917f6eefee69747cf2ddc",
+        "project-task:6fe61e9792f45c34e34c3ca846ff5ba50440ca22580fd555478d7918235ecf79",
+        "project-task:edca8778622f95b7dfb6183db34ed26babe474badec7e5afc3bfe9ab44dcc6bf"
+      ],
+      "sha256": "5e80d9b05b6812c52e17ea96c40512868ee6bceb223f30654e4b65e27bdafd85"
+    }
+  ]
+}

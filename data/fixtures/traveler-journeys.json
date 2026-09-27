@@ -1,0 +1,28 @@
+{
+  "travelers": [
+    { "id": "traveler-demo-a", "label": "Synthetic Traveler A" },
+    { "id": "traveler-demo-b", "label": "Synthetic Traveler B" }
+  ],
+  "itineraries": [
+    {
+      "id": "itinerary-demo-001",
+      "ownerId": "traveler-demo-a",
+      "title": "Sample Lisbon Day",
+      "items": ["place-demo-001", "activity-demo-001"]
+    }
+  ],
+  "bookings": [
+    {
+      "id": "booking-demo-001",
+      "ownerId": "traveler-demo-a",
+      "itineraryId": "itinerary-demo-001",
+      "activityId": "activity-demo-001",
+      "status": "planned"
+    }
+  ],
+  "safeFailureExamples": [
+    { "case": "missing-booking", "status": 404, "bodyCode": "BOOKING_NOT_FOUND" },
+    { "case": "other-owner", "status": 403, "bodyCode": "ACCESS_DENIED" },
+    { "case": "invalid-activity", "status": 422, "bodyCode": "ACTIVITY_UNAVAILABLE" }
+  ]
+}
