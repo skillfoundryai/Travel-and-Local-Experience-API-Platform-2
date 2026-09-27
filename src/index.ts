@@ -1,24 +1,9 @@
+import express from "express";
 import { app } from "./app";
-import { env } from "./config/env";
+import { discoveryRouter } from "./discovery/router";
 
-function startServer() {
-  try {
-    const config = env;
+export const myapp = express();
 
-    app.listen(config.port, () => {
-      console.log(
-        `Server listening on port ${config.port} (${config.nodeEnv})`
-      );
-    });
-  } catch (error) {
-    const message =
-      error instanceof Error
-        ? error.message
-        : "Unknown configuration error.";
-
-    console.error(`Startup configuration error: ${message}`);
-    process.exit(1);
-  }
-}
-
-startServer();
+myapp.disable("x-powered-by");
+myapp.use(express.json({ limit: "100kb" }));
+myapp.use(discoveryRouter);
